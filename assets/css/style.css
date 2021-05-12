@@ -1,34 +1,18 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-
-html, body, .Container
-{
+html, body {
     height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.left{
+    float: left;
+    width: 50%;
+    height: 100vh; /* Set your height here */
+    overflow: auto;
 }
 
-    .Container:before
-    {
-        content: '';
-        height: 100%;
-        float: left;
-    }
-
-.Header
-{
-    margin-bottom: 10px;
-    background-color: #6ea364;
+.right{
+    float: left;
+    width: 50%;
+    height:100vh ; 
+    overflow: auto;
 }
-.Content
-{
-    position: relative;
-    z-index: 1;
-}
-    .Content:after
-    {
-        content: '';
-        clear: both;
-        display: block;
-    }
